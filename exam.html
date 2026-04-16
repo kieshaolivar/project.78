@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Upload Dashboard</title>
+    <style>
+        :root {
+            --primary: #4f46e5;
+            --bg: #f3f4f6;
+            --card-bg: #ffffff;
+            --text: #1f2937;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            display: flex;
+        }
+
+        /* Sidebar Navigation */
+        nav {
+            width: 240px;
+            height: 100vh;
+            background: #111827;
+            color: white;
+            padding: 2rem 1rem;
+            position: fixed;
+        }
+
+        nav h2 { font-size: 1.2rem; margin-bottom: 2rem; color: #818cf8; }
+        nav a { display: block; color: #d1d5db; text-decoration: none; padding: 0.75rem; border-radius: 6px; margin-bottom: 0.5rem; }
+        nav a:hover { background: #374151; color: white; }
+
+        /* Main Content Area */
+        main {
+            margin-left: 240px;
+            padding: 2rem;
+            width: 100%;
+        }
+
+        
+       
+    </style>
+</head>
+<body>
+
+    <nav>
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="index.html">Profile Overview</a></li>
+                <li><a href="quiz.html">Quiz Submissions</a></li>
+                <li><a href="lab.html">Lab Work</a></li>
+                <li><a href="exam.html">Major Exams</a></li>
+            </ul>
+            </nav>
+
+    <main>
+        </section><section id="quizzes">
+    <h2>MAJOR EXAMS</h2>
+    <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+        <div style="border: 1px solid #ccc; padding: 10px; border-radius: 8px; width: 200px;">
+            <img src=".jpg" alt="Quiz 1" style="width: 100%; border-radius: 4px;">
+            <p style="text-align: center; font-weight: bold;">MIDTERMS</p>
+        </div>
+        <div style="border: 1px solid #ccc; padding: 10px; border-radius: 8px; width: 200px;">
+            <img src=".jpg" alt="Quiz 2" style="width: 100%; border-radius: 4px;">
+            <p style="text-align: center; font-weight: bold;"> FINALS</p>
+        </div>
+    </div>
+       
+    </main>
+
+</body>
+</html>

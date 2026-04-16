@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Upload Dashboard</title>
+    <style>
+        :root {
+            --primary: #4f46e5;
+            --bg: #f3f4f6;
+            --card-bg: #ffffff;
+            --text: #1f2937;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            display: flex;
+        }
+
+        /* Sidebar Navigation */
+        nav {
+            width: 240px;
+            height: 100vh;
+            background: #111827;
+            color: white;
+            padding: 2rem 1rem;
+            position: fixed;
+        }
+
+        nav h2 { font-size: 1.2rem; margin-bottom: 2rem; color: #818cf8; }
+        nav a { display: block; color: #d1d5db; text-decoration: none; padding: 0.75rem; border-radius: 6px; margin-bottom: 0.5rem; }
+        nav a:hover { background: #374151; color: white; }
+
+        /* Main Content Area */
+        main {
+            margin-left: 240px;
+            padding: 2rem;
+            width: 100%;
+        }
+
+        .header { margin-bottom: 2rem; }
+
+        /* Grid Layout for Cards */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h3 { margin-top: 0; border-bottom: 2px solid var(--bg); padding-bottom: 0.5rem; }
+
+        /* Form Styling */
+        .upload-group { margin: 1rem 0; }
+        label { display: block; font-size: 0.9rem; margin-bottom: 0.5rem; font-weight: 600; }
+        input[type="file"], input[type="text"] {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #d1d5db;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 0.6rem 1.2rem;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: opacity 0.2s;
+        }
+
+        button:hover { opacity: 0.9; }
+
+        .status { font-size: 0.8rem; color: #6b7280; margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+    <nav>
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="index.html">Profile Overview</a></li>
+                <li><a href="quiz.html">Quiz Submissions</a></li>
+                <li><a href="lab.html">Lab Work</a></li>
+                <li><a href="exam.html">Major Exams</a></li>
+            </ul>
+            </nav>
+
+    <main>
+        <div class="header">
+            <h1>Academic Submissions</h1>
+            <p>Welcome back! Upload your latest files below.</p>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <h3>📝 Quizzes</h3>
+                <form>
+                    <div class="upload-group">
+                        <label>Quiz Title</label>
+                        <input type="text" placeholder="e.g. Weekly Quiz 4">
+                    </div>
+                    <div class="upload-group">
+                        <label>Upload Document (PDF/Doc)</label>
+                        <input type="file">
+                    </div>
+                    <button type="button">Upload Quiz</button>
+                </form>
+                <p class="status">Last upload: 2 days ago</p>
+            </div>
+
+            <div class="card">
+                <h3>🧪 Laboratories</h3>
+                <form>
+                    <div class="upload-group">
+                        <label>Lab Experiment #</label>
+                        <input type="text" placeholder="e.g. Lab 09: Circuitry">
+                    </div>
+                    <div class="upload-group">
+                        <label>Upload Report</label>
+                        <input type="file">
+                    </div>
+                    <button type="button">Upload Lab</button>
+                </form>
+                <p class="status">3 pending reviews</p>
+            </div>
+
+            <div class="card">
+                <h3>🎓 Exams</h3>
+                <form>
+                    <div class="upload-group">
+                        <label>Exam Type</label>
+                        <input type="text" placeholder="e.g. Midterms">
+                    </div>
+                    <div class="upload-group">
+                        <label>Final Paper Submission</label>
+                        <input type="file">
+                    </div>
+                    <button type="button" style="background: #dc2626;">Upload Exam</button>
+                </form>
+                <p class="status">Security scan active</p>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

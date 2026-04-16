@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Keisha Lyle Olivar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+
+   
+
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <nav>
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="index.html">Profile Overview</a></li>
+                <li><a href="quiz.html">Quiz Submissions</a></li>
+                <li><a href="lab.html">Lab Work</a></li>
+                <li><a href="exam.html">Major Exams</a></li>
+            </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header>
+                <h1>Dashboard</h1>
+                <p>Welcome back, <strong>Keisha Lyle Olivar</strong> (BSCS 1A)</p>
+            </header>
+
+            <style>
+.sidebar {
+    width: 200px;
+    background: #34495e;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+    color: #bdc3c7;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    color: white;
+}
+
+.main-content {
+    flex: 1;
+    padding: 30px;
+    background: #ecf0f1;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.stat-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #3498db;
+    margin: 10px 0;
+}
+
+.action-buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background: #3498db;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.active {
+    text-decoration: underline;
+    color: #3498db !important;
+}
+
+</style>
+            <section class="stats-grid">
+                <div class="stat-card">
+                    <h3>Quizzes</h3>
+                    <p class="stat-number">0</p>
+                    <span>Uploaded</span>
+                </div>
+                <div class="stat-card">
+                    <h3>Lab Works</h3>
+                    <p class="stat-number">0</p>
+                    <span>Completed</span>
+                </div>
+                <div class="stat-card">
+                    <h3>Exams</h3>
+                    <p class="stat-number">0</p>
+                    <span>Submitted</span>
+                </div>
+            </section>
+
+            <section class="recent-activity">
+                <h2>Quick Actions</h2>
+                <div class="action-buttons">
+                    <a href="upload.html" class="btn">Upload New Quiz</a>
+                    <a href="upload.html" class="btn">Submit Lab Report</a>
+                </div>
+            </section>
+        </main>
+    </div>
